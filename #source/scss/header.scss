@@ -1,0 +1,45 @@
+.header {
+	padding: 15px;
+	background-color: #794f45;
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1000px)  1fr;
+	align-items: center;
+}
+
+.header__logo{
+	width: 70px;
+	height: 70px;
+	grid-column: 2/3;
+}
+
+.header__logo img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.header__menu {
+	grid-column: 3/4;
+}
+
+.header__list {
+	display: grid;
+	grid-auto-flow: column;
+	justify-items:end;
+}
+
+
+.header__list a:hover{
+	transition-duration: 0.5s;
+	color: black;
+}
+
+.header__list li{
+	margin: 0px 0px 0px 15px;
+}
+
+.header__link {
+	color: white;
+	font-size: 18px;
+}
+
